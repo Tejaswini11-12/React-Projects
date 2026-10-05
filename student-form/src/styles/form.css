@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+/* Main form */
+
+.registration-form {
+  width: 500px;
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+
+.registration-form h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+/* Labels */
+
+.registration-form > label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Text inputs */
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="tel"] {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.registration-form input[type="text"]:focus,
+.registration-form input[type="email"]:focus,
+.registration-form input[type="tel"]:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Radio buttons */
+
+.registration-form label:has(input[type="radio"]) {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 20px;
+  font-weight: normal;
+}
+
+.registration-form input[type="radio"] {
+  accent-color: #4f46e5;
+}
+
+/* Terms checkbox */
+
+.registration-form label:has(input[type="checkbox"]) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.registration-form input[type="checkbox"] {
+  accent-color: #4f46e5;
+}
+
+/* Register button */
+
+.registration-form button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.registration-form button:hover {
+  background: #3730a3;
+  transform: translateY(-2px);
+}
+
+/* Student details heading */
+
+.registration-form h2 {
+  margin-top: 40px;
+  padding-top: 25px;
+  border-top: 1px solid #eee;
+  text-align: center;
+  font-size: 22px;
+}
+
+/* Student cards */
+
+.student-list ul {
+  list-style: none;
+  margin: 15px 0;
+  padding: 18px;
+  background: #f8f9ff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.student-list ul:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.student-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+.student-list li:last-child {
+  border-bottom: none;
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+  .registration-form {
+    padding: 25px;
+  }
+
+  .registration-form h1 {
+    font-size: 24px;
+  }
+}

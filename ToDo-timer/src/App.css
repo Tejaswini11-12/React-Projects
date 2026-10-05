@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f1ee;
+  color: #292725;
+}
+
+/* Main input area */
+
+.todo-input {
+  width: 600px;
+  max-width: 90%;
+  margin: 80px auto 25px;
+
+  display: flex;
+  gap: 10px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 14px 16px;
+
+  border: 1px solid #d5d0ca;
+  border-radius: 10px;
+
+  background: white;
+  font-size: 15px;
+  outline: none;
+
+  transition: 0.2s ease;
+}
+
+.todo-input input:focus {
+  border-color: #6b6258;
+  box-shadow: 0 0 0 3px rgba(107, 98, 88, 0.12);
+}
+
+/* Add button */
+
+.todo-input button {
+  padding: 0 22px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #292725;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.todo-input button:hover {
+  background: #4a4540;
+  transform: translateY(-2px);
+}
+
+/* Todo list */
+
+.todo-list {
+  width: 600px;
+  max-width: 90%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Todo card */
+
+.todo-card {
+  padding: 18px 20px;
+
+  background: white;
+  border: 1px solid #e4dfda;
+  border-radius: 12px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+  transition: 0.25s ease;
+}
+
+.todo-card:hover {
+  transform: translateY(-3px);
+  border-color: #c5beb6;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
+}
+
+/* Todo text */
+
+.todo-text {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Timer */
+
+.todo-card p {
+  margin: 8px 0 0;
+
+  font-size: 13px;
+  color: #777;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .todo-input {
+    flex-direction: column;
+  }
+
+  .todo-input button {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+#root {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 25px;
+}
+
+/* Heading */
+
+h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 40px;
+}
+
+/* Cards container */
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Individual card */
+
+.post-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  min-height: 180px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+
+.post-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  background: #fafbff;
+}
+
+/* Title */
+
+.post-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 21px;
+}
+
+/* Author */
+
+.post-card p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Link */
+
+.post-card a {
+  color: #3f51b5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.post-card a:hover {
+  color: #1a237e;
+  text-decoration: underline;
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+  .post-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
+}
